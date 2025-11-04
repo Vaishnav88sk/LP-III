@@ -1,0 +1,38 @@
+1)Predict the price of the Uber ride from a given pickup point to the agreed drop-off location.
+Perform following tasks: 
+1. Pre-process the dataset. 
+2. Identify outliers. 
+3. Check the correlation. 
+4. Implement linear regression and random forest regression models. 
+5. Evaluate the models and compare their respective scores like R2, RMSE, etc. Dataset link:
+   https://www.kaggle.com/datasets/yasserh/uber-fares-dataset.
+
+2 Implement K-Means clustering/ hierarchical clustering on sales_data_sample.csv dataset.
+Determine the number of clusters using the elbow method. Dataset link:
+   https://www.kaggle.com/datasets/kyanyoga/sample-sales-data
+
+3 Implement K-Nearest Neighbors algorithm on diabetes.csv dataset. Compute confusion matrix,
+accuracy, error rate, precision and recall on the given dataset. Dataset link:
+https://www.kaggle.com/datasets/abdallamahgoub/diabetes
+
+
+4 Given a bank customer, build a neural network- based classifier that can determine whether they
+will leave or not in the next 6 months. Dataset Description: The case study is from an
+open-source dataset from Kaggle. The dataset contains 10,000 sample points with 14 distinct
+features such as Customer ID, Credit Score, Geography, Gender, Age, Tenure, Balance, etc.
+Link to the Kaggle project:https://www.kaggle.com/barelydedicated/bank-customer-churn-modeling Perform following
+steps: 
+1. Read the dataset.
+2. Distinguish the feature and target set and divide the data set into training and test sets.
+3. Normalize the train and test data.
+4. Initialize and build the model.Identify the points of improvement and implement the same. 
+5. Print the accuracy score and confusion matrix (5 points).
+
+
+5 Classify the email using the binary classification method. Email Spam detection has two states: 
+a)Normal State – Not Spam, b) Abnormal State –Spam. Use K-Nearest Neighbors and Support
+Vector Machine for classification. Analyze their performance. Dataset link: The emails.csv
+dataset on the Kaggle:
+    https://www.kaggle.com/datasets/balaka18/email-spam-classification-dataset-csv
+
+
