@@ -1,0 +1,66 @@
+//2. Create your own wallet using Metamask for crypto transactions.[Steps]
+
+Step 1:
+Install MetaMask
+Go to https://metamask.io
+Click Download → Add to Chrome / Edge / Firefox
+Open the extension → click Get Started
+_______________________________________________
+
+Step 2:
+Create a New Wallet
+Click Create a Wallet
+(If you already have one, choose “Import Wallet” to restore it)
+Choose whether to share feedback → click Agree or No Thanks
+Set a strong password (e.g., Neha@1234)
+Click Create to continue
+__________________________________________________
+
+Step 3:
+Save Your Secret Recovery Phrase
+Click the grey box to reveal your 12-word seed phrase
+Write it down safely or store it offline (never share it)
+Click each word in correct order to confirm
+Click Confirm → All Done ✅
+Your wallet is now ready for transactions
+________________________________________________
+
+Step 4:
+Deposit or Buy Cryptocurrency
+Click your wallet address to copy it (e.g., 0xAb12...F4c8)
+Option 1: Send ETH from another wallet or exchange
+Option 2: Click Buy to purchase ETH within MetaMask
+Wait a few minutes — ETH will appear under your Assets tab
+To view custom tokens, click Add Token → Enter Token Details
+
+______________________________________________________
+
+Step 5️:
+Send Cryptocurrency
+Click Send
+Enter:
+Recipient Address (who you’re sending to)
+Amount of ETH (e.g., 0.05)
+Gas Fee (higher = faster; default is auto-set)
+Click Next → Confirm
+Track transaction status in Activity tab or on Etherscan
+
+____________________________________________________________
+
+Step 6️:
+Spend Crypto in a DApp
+Visit a DApp from https://dappradar.com
+ (e.g., KyberSwap)
+Click Connect Wallet → MetaMask
+MetaMask popup → Next → Confirm
+Enter token swap details → click Swap Now → Confirm
+Transaction is processed by miners
+You can close the window and later check Activity / Etherscan
+
+*******************************************************
+Example:
+Example Transaction
+Amount Sent: 0.05 ETH
+Gas Used: 21,000
+Gas Price: 20 Gwei
+Transaction Cost: 21,000 × 20 Gwei = 0.00042 ETH

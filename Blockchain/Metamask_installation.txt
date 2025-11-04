@@ -1,0 +1,66 @@
+//Steps to install Metamsk
+
+1.Install MetaMask
+
+Open your browser → go to https://metamask.io
+Click “Download” → “Add to Chrome” (or your browser)
+Click “Get Started” → “Create a Wallet”
+Set a password (example: Neha@1234)
+Write down the Secret Recovery Phrase (12 words) safely
+✅ You now have your MetaMask wallet.
+
+2.Connect to a Test Network (Sepolia)
+
+In MetaMask → click Settings → Advanced → Show test networks → ON
+Now switch network to Sepolia Test Network
+Go to faucet: https://sepoliafaucet.com
+Paste your wallet address (example: 0xAb12...F4c8)
+Click “Send Me ETH”
+✅ After a few seconds, you’ll see some test Ether in your wallet (e.g., 0.5 SepoliaETH).
+
+3.Deploy a Smart Contract (Example Input)
+We’ll test one simple transaction using Remix.
+Go to https://remix.ethereum.org
+Paste a simple contract:
+/*
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract TestTransaction {
+    uint public value;
+
+    function store(uint _val) public {
+        value = _val;
+    }
+}
+
+*/
+
+4.Compile → Deploy using Injected Provider - MetaMask
+
+5.MetaMask pops up showing the transaction details.
+
+//When u deplo or run  function like store(10),MetaMask will show:
+
+| Parameter               | Example Input / Output                 |
+| ----------------------- | -------------------------------------- |
+| **Gas Limit**           | 21,000                                 |
+| **Gas Price**           | 20 Gwei                                |
+| **Transaction Fee**     | `0.00042 ETH`                          |
+| **Total Cost**          | (Gas Used × Gas Price) = `0.00042 ETH` |
+| **Sender Address**      | `0xAb12...F4c8`                        |
+| **Receiver (Contract)** | `0xB45E...D92b`                        |
+
+After confirming, you can check:
+MetaMask → Activity → View on Etherscan
+It shows “Gas Used”, “Effective Gas Price”, and “Transaction Fee
+
+
+Eg:
+Gas used     = 21,000
+Gas price    = 20 Gwei
+1 Gwei       = 0.000000001 ETH
+
+Total Ether spent = 21,000 × 20 × 0.000000001
+                  = 0.00042 ETH
