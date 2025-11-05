@@ -6,7 +6,7 @@ import java.util.*;
 public class NQueens {
     static int n;
     static int[] board;
-    static boolean found = false;
+    static int solutionCount = 0;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,36 +14,39 @@ public class NQueens {
         n = sc.nextInt();
         board = new int[n];
         solve(0);
-        if (!found)
+        
+        if (solutionCount == 0)
             System.out.println("No solution exists for n = " + n);
+        else
+            System.out.println("\nTotal " + solutionCount + " solution(s) exist for n = " + n);
+        
         sc.close();
     }
 
     static void solve(int col) {
         if (col == n) {
+            solutionCount++;
             printBoard();
-            found = true;
             return;
         }
         for (int row = 0; row < n; row++) {
             if (isSafe(row, col)) {
                 board[col] = row;
-                solve(col + 1);
-                if (found)
-                    return; // stop after one solution
+                solve(col + 1); // don't stop after first solution
             }
         }
     }
 
     static boolean isSafe(int row, int col) {
-        for (int i = 0; i < col; i++)
+        for (int i = 0; i < col; i++) {
             if (board[i] == row || Math.abs(board[i] - row) == Math.abs(i - col))
                 return false;
+        }
         return true;
     }
 
     static void printBoard() {
-        System.out.println("\nOne of the possible solutions:\n");
+        System.out.println("\nSolution " + solutionCount + ":");
         for (int r = 0; r < n; r++) {
             for (int c = 0; c < n; c++)
                 System.out.print((board[c] == r ? "Q " : "x "));
@@ -84,4 +87,5 @@ public class NQueens {
  * x x x Q x x
  * x Q x x x x
  * x x x x x Q
+
  */
